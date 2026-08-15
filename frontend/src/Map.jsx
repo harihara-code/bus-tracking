@@ -57,12 +57,6 @@ function Map({busesData}) {
           </Popup>
         </Marker>);
       })}
-{/* <Marker
-  position={[13.0827, 80.2707]}
-  icon={createBusIcon("TEST")}
->
-  <Popup>Test marker</Popup>
-</Marker> */}
     </MapContainer>
   );
 }

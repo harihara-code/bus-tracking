@@ -13,7 +13,7 @@ function App() {
     async function fetchBusesData() {
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/buslocations"
+          "https://bus-tracking-spb1.onrender.com/api/buslocations"
         )
 
         setBusesData(response.data)
