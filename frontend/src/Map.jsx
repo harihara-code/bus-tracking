@@ -43,8 +43,8 @@ function Map({busesData}) {
 
       {busesData.map((busData, index) => {
         var busPosition = [];
-        busPosition.push(busData.latitude);
-        busPosition.push(busData.longitude); 
+        busPosition.push(Number(busData.latitude));
+        busPosition.push(Number(busData.longitude)); 
         
         console.log(busPosition);
         return (<Marker position={busPosition} icon={createBusIcon(busData.routeno)}>
@@ -57,12 +57,12 @@ function Map({busesData}) {
           </Popup>
         </Marker>);
       })}
-<Marker
+{/* <Marker
   position={[13.0827, 80.2707]}
   icon={createBusIcon("TEST")}
 >
   <Popup>Test marker</Popup>
-</Marker>
+</Marker> */}
     </MapContainer>
   );
 }
